@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #306998;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.title {
+    display: inline-block;
+    font-size: 28px;
+    margin: 0;
+}
+
+h1.title {
+    text-decoration: none;
+    color: white;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin: 10px 0;
+}
+
+#sidebar li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+#sidebar li.active a {
+    color: #3a6b93;
+}
+#sidebar li a:hover {
+    color: #4b86b6;
+}
+
+.sidebar-toggle-button {
+    background-color: #3a8bce;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+#sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+#sidebar.collapsed {
+    width: 0;
+}
+  
+#sidebar.expanded {
+    width: 250px;
+}
+  
+#toggleSidebar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #f0f0f0;
+    color: #000000;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1.5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 999;
+    width: 50px;
+    overflow: hidden;
+    transition: transform 0.5s;
+    transform: translateX(0%);
+    
+  }
+
+#toggleSidebar.collapsed {
+    transition: transform 0.5s;
+    transform: translateX(350%);
+    
+}
+  
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#content a {
+    text-decoration: none;
+    color: black;
+}
+
+#content a:hover{
+    text-decoration: none;
+    color: #3a8bce;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
